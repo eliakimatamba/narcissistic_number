@@ -24,11 +24,11 @@ bool narcissistic( int value ){
   
   //re-arrange the number from last to first, the correct order
   //since push stores in a stack, i.e FILO
-  std::vector<int> lro;
+  std::vector<int> lro;//left-right order vector
   for(int i=digits.size()-1; i>=0; i--)
     lro.push_back(digits[i]);
 
-  //get sum of the i-th digit indexed to number digits
+  //get sum of the i-th digit indexed to number of digits
   //e.g, 12 = 1^2+2^2 = 5
   int candidate=0;
   for(int i=0; i<count; i++)
